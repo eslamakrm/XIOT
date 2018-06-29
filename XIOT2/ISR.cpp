@@ -10,7 +10,7 @@
 
 #include "ISR.h"
 
-ISRR::ISRR(int ledPin ,int switchPin,void (*isrFunction)(void)) {
+ISRR::ISRR(byte ledPin ,byte switchPin,void (*isrFunction)(void)) {
 	// TODO Auto-generated constructor stub
 this->ledPin = ledPin;
 this->switchPin = switchPin;

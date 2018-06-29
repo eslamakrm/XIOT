@@ -10,12 +10,12 @@
 #include <Arduino.h>
 class ISRR {
   public:
-	  int ledPin;
-	  int switchPin;
+	  byte ledPin;
+	  byte switchPin;
 	  void (*isrFunction)(void);
 	  void ledControl();
 
-    ISRR(int,int,void (*)(void) );
+    ISRR(byte,byte,void (*)(void) );
 };
 
 #endif /* ISR_H_ */

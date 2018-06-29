@@ -17,8 +17,8 @@ void setup() {
 
   Serial.begin(9600);
 
-  ISRR ISR1(4, 2, isr1); // new member for ISR
-  ISRR ISR2(5, 3, isr2);
+  ISRR ISR1(LED1, SWITCH1, isr1); // new member for ISR
+  ISRR ISR2(LED2, SWITCH2, isr2);
 
   ISR1.ledControl(); //initialize ISR to allow led controlling using switch
   ISR2.ledControl();

@@ -1,4 +1,4 @@
-VERSION 1 :
-			ledControl function can be used to define an interrupt with output and input also the ISR function
-			so the ledControl function can be called many times with diferent i/o pins to control the output
-			and each ISR cannot interrupt another ISR 
+what I have learned :
+             1 - while i'm trying to encapsulate the whole code in one function i found that the arduino specified compiler
+			 doesn't allow nested function unlike standard GCC compiler that allow this with specific extension 
+
